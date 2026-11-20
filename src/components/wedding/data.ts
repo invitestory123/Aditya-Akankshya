@@ -1,0 +1,61 @@
+export const wedding = {
+  groom: {
+    name: "Aditya",
+    fullName: "Aditya (Munu)",
+    line: "Mechanical Engineer",
+    note: "A passionate mechanical engineer with an eye for precision and a heart full of joy, ready to embark on life's most beautiful journey.",
+    image: "/images/groom.jpg",
+  },
+  bride: {
+    name: "Akankshya",
+    fullName: "Akankshya (Kunmun)",
+    line: "AI Software Engineer",
+    note: "An innovative AI software engineer whose brilliance is matched only by her warmth, lighting up every world she touches.",
+    image: "/images/bride.jpg",
+  },
+  // 31 January 2027, 10:00 AM IST
+  dateISO: "2027-01-31T10:00:00+05:30",
+  endISO: "2027-01-31T23:00:00+05:30",
+  dateLabel: "Sunday, 31 January 2027",
+  timeLabel: "10:00 AM onwards",
+  muhurthamLabel: "Wedding Ceremony · 10:00 AM onwards",
+  city: "Cuttack & Rourkela, Odisha",
+  venue: {
+    name: "Krishna Courtyard",
+    address: "Cuttack, Odisha",
+    mapUrl: "https://maps.app.goo.gl/5oAcSXnFdtf8szXNA?g_st=ic",
+  },
+  receptionVenue: {
+    name: "Deepti Courtyard",
+    address: "Rourkela, Odisha",
+    mapUrl: "https://maps.app.goo.gl/2fHZUtABcJUuRHn89?g_st=ic",
+  },
+  song: {
+    title: "Madhanya",
+    artists: "Rahul Vaidya & Asees Kaur",
+    audioSrc: "/audio/madhanya.m4a",
+    youtubeUrl: "https://youtu.be/M-dsSdYJ-cw?si=7V4LS7a4gBNcME89",
+  },
+  events: [
+    {
+      title: "Wedding Ceremony",
+      tag: "Marriage",
+      time: "10:00 AM onwards",
+      date: "Sunday, 31 January 2027",
+      venueName: "Krishna Courtyard",
+      city: "Cuttack, Odisha",
+      address: "Krishna Courtyard, Cuttack",
+      mapUrl: "https://maps.app.goo.gl/5oAcSXnFdtf8szXNA?g_st=ic",
+    },
+    {
+      title: "Wedding Reception",
+      tag: "Reception",
+      time: "Evening Celebration",
+      date: "Deepti Courtyard",
+      venueName: "Deepti Courtyard",
+      city: "Rourkela, Odisha",
+      address: "Deepti Courtyard, Rourkela",
+      mapUrl: "https://maps.app.goo.gl/2fHZUtABcJUuRHn89?g_st=ic",
+    },
+  ],
+};
