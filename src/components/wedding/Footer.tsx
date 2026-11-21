@@ -51,8 +51,8 @@ export function Footer() {
               {wedding.groom.name} <span className="font-script text-gold">&amp;</span>{" "}
               {wedding.bride.name}
             </p>
-            <p className="text-ivory/50 mt-2 text-[0.6rem] tracking-[0.4em] uppercase">
-              31 · 01 · 2027 · Cuttack
+            <p className="text-ivory/70 mt-2 text-[0.65rem] tracking-[0.3em] uppercase">
+              Wedding: 31 Jan · Cuttack &nbsp;|&nbsp; Reception: 3 Feb · Rourkela
             </p>
           </div>
         </Reveal>

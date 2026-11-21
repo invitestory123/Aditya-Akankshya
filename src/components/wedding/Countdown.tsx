@@ -78,9 +78,14 @@ export function Countdown() {
         </Reveal>
 
         <Reveal delay={0.2}>
-          <p className="text-ivory/55 mt-6 text-xs tracking-[0.25em] uppercase">
-            {wedding.dateLabel}
-          </p>
+          <div className="mt-7 flex flex-col items-center gap-1.5">
+            <p className="text-gold-soft text-xs tracking-[0.25em] uppercase font-medium">
+              💍 Wedding: 31 January 2027 · Cuttack
+            </p>
+            <p className="text-ivory/70 text-[0.7rem] tracking-[0.2em] uppercase">
+              ✨ Reception: 3 February 2027 · Rourkela
+            </p>
+          </div>
         </Reveal>
       </div>
     </section>

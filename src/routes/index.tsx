@@ -10,9 +10,9 @@ import { Opener } from "@/components/wedding/Opener";
 import { ScrollProgress } from "@/components/wedding/ScrollProgress";
 import { MusicPlayer } from "@/components/wedding/MusicPlayer";
 
-const title = "Aditya & Akankshya · 31 January 2027, Cuttack";
+const title = "Aditya & Akankshya · Wedding: 31 Jan (Cuttack) | Reception: 3 Feb (Rourkela)";
 const description =
-  "Together with their families, Aditya (Munu) and Akankshya (Kunmun) invite you to celebrate their wedding on 31 January 2027 at Krishna Courtyard, Cuttack.";
+  "Together with their families, Aditya (Munu) and Akankshya (Kunmun) invite you to celebrate their wedding on 31 January 2027 at Krishna Courtyard, Cuttack, and reception on 3 February 2027 at Deepti Courtyard, Rourkela.";
 
 export const Route = createFileRoute("/")({
   head: () => ({

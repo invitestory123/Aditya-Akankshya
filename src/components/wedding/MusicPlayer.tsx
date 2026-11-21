@@ -57,8 +57,8 @@ export function MusicPlayer({ autoPlayTrigger }: { autoPlayTrigger?: boolean }) 
               className="bg-card/90 border-gold/40 shadow-luxe hidden items-center gap-2 rounded-full border px-3 py-1.5 backdrop-blur-md sm:flex"
             >
               <Music2 className="text-gold h-3.5 w-3.5 animate-pulse" />
-              <span className="text-foreground max-w-[120px] truncate text-[0.65rem] font-medium tracking-wider">
-                {wedding.song.title}
+              <span className="text-foreground max-w-[150px] truncate text-[0.65rem] font-medium tracking-wider">
+                {wedding.song.title} · Ramayana
               </span>
             </motion.div>
           )}
@@ -69,7 +69,7 @@ export function MusicPlayer({ autoPlayTrigger }: { autoPlayTrigger?: boolean }) 
           whileTap={{ scale: 0.9 }}
           whileHover={{ scale: 1.08 }}
           aria-label={isPlaying ? "Mute music" : "Play music"}
-          className="from-primary to-emerald-ink border-gold/40 shadow-gold text-ivory relative flex h-11 w-11 items-center justify-center rounded-full border bg-gradient-to-br backdrop-blur-sm"
+          className="from-primary to-emerald-ink border-gold/40 shadow-gold text-ivory relative flex h-11 w-11 items-center justify-center rounded-full border bg-gradient-to-br backdrop-blur-sm cursor-pointer"
         >
           {isPlaying ? (
             <motion.div

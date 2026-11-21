@@ -20,14 +20,14 @@ function Person({
           }}
         />
         <div className="relative flex flex-col items-center text-center">
-          <div className="from-gold/25 relative h-44 w-44 overflow-hidden rounded-full border-2 border-gold/40 bg-gradient-to-b to-transparent p-1 shadow-inner">
+          <div className="from-gold/25 relative h-48 w-48 overflow-hidden rounded-full border-2 border-gold/50 bg-gradient-to-b to-transparent p-1 shadow-inner">
             <img
               src={person.image}
               alt={person.fullName}
               loading="lazy"
-              width={350}
-              height={350}
-              className="h-full w-full rounded-full object-cover object-center"
+              width={480}
+              height={480}
+              className="h-full w-full rounded-full object-cover object-center transition-transform duration-500 hover:scale-105"
             />
           </div>
           <span className="text-gold mt-5 text-[0.6rem] tracking-[0.45em] uppercase">
@@ -71,30 +71,36 @@ export function Couple() {
         </Reveal>
 
         <div className="mt-10 space-y-8">
+          {/* 2nd Image: Groom Photo */}
           <Parallax speed={26}>
             <Person person={wedding.groom} role="The Groom" />
           </Parallax>
+
           <div className="flex justify-center">
             <span className="font-script text-gold animate-float-soft text-5xl">&amp;</span>
           </div>
+
+          {/* 3rd Image: Bride Photo */}
           <Parallax speed={-26}>
             <Person person={wedding.bride} role="The Bride" />
           </Parallax>
         </div>
 
-        {/* Featured Couple Photo */}
+        {/* 4th Image: Combined Couple Photo */}
         <Reveal delay={0.2} className="mt-12">
-          <div className="border-gold/30 bg-card/60 shadow-luxe relative overflow-hidden rounded-[2rem] border p-4 backdrop-blur-sm">
-            <div className="relative overflow-hidden rounded-[1.5rem]">
+          <div className="border-gold/30 bg-card/70 shadow-luxe relative overflow-hidden rounded-[2rem] border p-4 backdrop-blur-sm">
+            <div className="relative overflow-hidden rounded-[1.5rem] border border-gold/25">
               <img
-                src="/images/couple.jpg"
-                alt="Aditya & Akankshya"
+                src={wedding.combinedCoupleImage}
+                alt="Aditya & Akankshya Together"
                 loading="lazy"
-                className="h-80 w-full object-cover object-center transition-transform duration-700 hover:scale-105"
+                width={746}
+                height={1024}
+                className="h-96 w-full object-cover object-center transition-transform duration-700 hover:scale-105"
               />
-              <div className="from-black/70 absolute inset-0 bg-gradient-to-t via-transparent to-transparent flex items-end p-5">
+              <div className="from-black/75 via-black/20 to-transparent absolute inset-0 bg-gradient-to-t flex items-end p-5">
                 <div className="text-center w-full">
-                  <p className="font-script text-gold-foil text-3xl">Aditya & Akankshya</p>
+                  <p className="font-script text-gold-foil text-3xl">Aditya &amp; Akankshya</p>
                   <p className="text-ivory/80 text-[0.65rem] tracking-[0.3em] uppercase mt-1">Together Forever</p>
                 </div>
               </div>
