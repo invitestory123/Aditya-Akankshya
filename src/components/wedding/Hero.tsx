@@ -99,17 +99,17 @@ export function Hero() {
           </motion.div>
         </motion.div>
 
-        {/* Stock Wedding Couple Illustration */}
+        {/* Hero Couple Photo (Aditya & Akankshya in suit & saree) */}
         <motion.img
-          src="/images/couple-hero.png"
-          alt="Wedding Couple Illustration"
-          width={1024}
-          height={1408}
+          src={wedding.heroCoupleImage}
+          alt="Aditya & Akankshya"
+          width={730}
+          height={824}
           initial={{ opacity: 0, y: 40, scale: 0.96 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
           transition={{ delay: 0.7, duration: 1.3, ease: [0.22, 1, 0.36, 1] }}
           style={{ y: coupleY, scale: coupleScale }}
-          className="mt-auto w-[82%] max-w-[320px] brightness-110 contrast-105 drop-shadow-[0_24px_40px_rgba(0,0,0,0.35)]"
+          className="mt-auto w-[84%] max-w-[340px] brightness-105 contrast-105 drop-shadow-[0_24px_40px_rgba(0,0,0,0.45)]"
         />
       </div>
 
