@@ -30,7 +30,7 @@ function Person({
               className="h-full w-full rounded-full object-cover object-center transition-transform duration-500 hover:scale-105"
             />
           </div>
-          <span className="text-gold mt-5 text-[0.6rem] tracking-[0.45em] uppercase">
+          <span className="text-gold mt-5 text-[0.6rem] tracking-[0.45em] uppercase font-medium">
             {role}
           </span>
           <h3 className="text-primary mt-2 text-3xl font-light">{person.fullName}</h3>
@@ -66,12 +66,12 @@ export function Couple() {
           <Ornament label="The Couple" />
           <h2 className="text-primary mt-5 text-4xl font-light">Two hearts, one story</h2>
           <p className="text-muted-foreground mx-auto mt-3 max-w-xs text-sm leading-relaxed">
-            Where logic meets love, engineering meets emotion, and two souls begin forever.
+            Seven sacred vows, two loving families, and a lifetime of happiness together.
           </p>
         </Reveal>
 
         <div className="mt-10 space-y-8">
-          {/* 2nd Image: Groom Photo */}
+          {/* Groom Photo */}
           <Parallax speed={26}>
             <Person person={wedding.groom} role="The Groom" />
           </Parallax>
@@ -80,13 +80,13 @@ export function Couple() {
             <span className="font-script text-gold animate-float-soft text-5xl">&amp;</span>
           </div>
 
-          {/* 3rd Image: Bride Photo */}
+          {/* Bride Photo */}
           <Parallax speed={-26}>
             <Person person={wedding.bride} role="The Bride" />
           </Parallax>
         </div>
 
-        {/* 4th Image: Combined Couple Photo */}
+        {/* Combined Couple Photo */}
         <Reveal delay={0.2} className="mt-12">
           <div className="border-gold/30 bg-card/70 shadow-luxe relative overflow-hidden rounded-[2rem] border p-4 backdrop-blur-sm">
             <div className="relative overflow-hidden rounded-[1.5rem] border border-gold/25">

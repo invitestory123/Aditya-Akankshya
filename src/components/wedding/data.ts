@@ -2,20 +2,23 @@ export const wedding = {
   groom: {
     name: "Aditya",
     fullName: "Aditya (Munu)",
-    line: "Mechanical Engineer",
-    note: "A passionate mechanical engineer with an eye for precision and a heart full of joy, ready to embark on life's most beautiful journey.",
+    profession: "Mechanical Engineer",
+    line: "Son of Mr. J.K. Tripathy & Mrs. Gayatri Tripathy",
+    note: "A generous heart and a joyful spirit, stepping into life's most sacred journey blessed with love, laughter, and family.",
     image: "/images/groom-avatar.jpg",
     fullImage: "/images/groom.jpg",
   },
   bride: {
     name: "Akankshya",
     fullName: "Akankshya (Kunmun)",
-    line: "AI Software Engineer",
-    note: "An innovative AI software engineer whose brilliance is matched only by her warmth, lighting up every world she touches.",
+    profession: "Software Developer",
+    line: "Daughter of Mr. Abhiram Kar & Mrs. Minati Kar",
+    note: "Graceful, loving, and radiant, beginning a beautiful new tomorrow filled with shared dreams beside Aditya.",
     image: "/images/bride-avatar.jpg",
     fullImage: "/images/bride.jpg",
   },
-  heroCoupleImage: "/images/hero-couple.jpg",
+  stockHeroImage: "/images/couple-hero.png",
+  heroCoupleImage: "/images/couple-hero.png",
   combinedCoupleImage: "/images/couple.jpg",
 
   // Wedding: 31 January 2027, 10:00 AM IST (Cuttack)

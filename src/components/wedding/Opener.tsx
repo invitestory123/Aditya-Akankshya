@@ -61,35 +61,35 @@ export function Opener({ onOpen }: { onOpen: () => void }) {
             exit={{ opacity: 0, scale: 0.9, filter: "blur(6px)" }}
             transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
           >
-            <span className="text-gold/80 text-[0.55rem] tracking-[0.5em] uppercase">
+            <span className="text-gold/80 text-[0.5rem] tracking-[0.45em] uppercase">
               A wedding invitation
             </span>
-            <h1 className="text-gold-foil font-display mt-5 text-5xl leading-none font-light">
+            <h1 className="text-gold-foil font-display mt-4 text-3xl sm:text-4xl leading-none font-light">
               {wedding.groom.name}
-              <span className="font-script text-gold/80 mx-3 text-3xl">&amp;</span>
+              <span className="font-script text-gold/80 mx-2.5 text-2xl">&amp;</span>
               {wedding.bride.name}
             </h1>
-            <span className="rule-gold mt-6 w-32" />
+            <span className="rule-gold mt-5 w-24" />
 
             <motion.button
               onClick={open}
               whileTap={{ scale: 0.92 }}
               whileHover={{ scale: 1.05 }}
-              className="group relative mt-12 grid h-28 w-28 place-items-center"
+              className="group relative mt-10 grid h-24 w-24 place-items-center cursor-pointer"
               aria-label="Open the invitation"
             >
               <motion.span
                 className="border-gold/40 absolute inset-0 rounded-full border"
-                animate={{ scale: [1, 1.28, 1], opacity: [0.7, 0, 0.7] }}
+                animate={{ scale: [1, 1.25, 1], opacity: [0.7, 0, 0.7] }}
                 transition={{ repeat: Infinity, duration: 2.6, ease: "easeOut" }}
               />
               <motion.span
-                className="shadow-gold grid h-20 w-20 place-items-center rounded-full"
+                className="shadow-gold grid h-16 w-16 place-items-center rounded-full"
                 style={{ backgroundImage: "var(--gradient-gold)" }}
-                animate={{ y: [0, -5, 0] }}
+                animate={{ y: [0, -4, 0] }}
                 transition={{ repeat: Infinity, duration: 3.4, ease: "easeInOut" }}
               >
-                <span className="font-script text-emerald-ink text-3xl leading-none">
+                <span className="font-script text-emerald-ink text-2xl leading-none">
                   {wedding.groom.name[0]}
                   {wedding.bride.name[0]}
                 </span>
@@ -97,7 +97,7 @@ export function Opener({ onOpen }: { onOpen: () => void }) {
             </motion.button>
 
             <motion.p
-              className="text-ivory/60 mt-8 text-[0.6rem] tracking-[0.4em] uppercase"
+              className="text-ivory/60 mt-6 text-[0.55rem] tracking-[0.35em] uppercase"
               animate={{ opacity: [0.4, 1, 0.4] }}
               transition={{ repeat: Infinity, duration: 2.4 }}
             >
