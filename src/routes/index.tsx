@@ -10,19 +10,32 @@ import { Opener } from "@/components/wedding/Opener";
 import { ScrollProgress } from "@/components/wedding/ScrollProgress";
 import { MusicPlayer } from "@/components/wedding/MusicPlayer";
 
-const title = "Aditya & Akankshya · Wedding: 31 Jan (Cuttack) | Reception: 3 Feb (Rourkela)";
+const title = "Aditya & Akankshya · Wedding Invitation";
 const description =
   "Together with their families, Aditya (Munu) and Akankshya (Kunmun) invite you to celebrate their wedding on 31 January 2027 at Krishna Courtyard, Cuttack, and reception on 3 February 2027 at Deepti Courtyard, Rourkela.";
+const ogImage = "/images/og-image.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title },
       { name: "description", content: description },
+
+      // Open Graph
+      { property: "og:type", content: "website" },
       { property: "og:title", content: title },
       { property: "og:description", content: description },
-      { property: "og:type", content: "website" },
+      { property: "og:image", content: ogImage },
+      { property: "og:image:width", content: "1200" },
+      { property: "og:image:height", content: "630" },
+      { property: "og:image:alt", content: "Aditya & Akankshya Wedding Invitation" },
+      { property: "og:site_name", content: "InviteStory" },
+
+      // Twitter Cards
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: title },
+      { name: "twitter:description", content: description },
+      { name: "twitter:image", content: ogImage },
     ],
   }),
   component: Invitation,

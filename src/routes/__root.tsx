@@ -78,15 +78,33 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "Aditya & Akankshya · Wedding Invitation" },
-      { name: "description", content: "Together with their families, Aditya (Munu) and Akankshya (Kunmun) invite you to celebrate their wedding." },
+      {
+        name: "description",
+        content:
+          "Together with their families, Aditya (Munu) and Akankshya (Kunmun) invite you to celebrate their wedding on 31 January 2027 in Cuttack & reception on 3 February 2027 in Rourkela.",
+      },
       { name: "author", content: "InviteStory" },
-      { property: "og:title", content: "Aditya & Akankshya · Wedding Invitation" },
-      { property: "og:description", content: "Together with their families, Aditya (Munu) and Akankshya (Kunmun) invite you to celebrate their wedding." },
       { property: "og:type", content: "website" },
+      { property: "og:title", content: "Aditya & Akankshya · Wedding Invitation" },
+      {
+        property: "og:description",
+        content:
+          "Together with their families, Aditya (Munu) and Akankshya (Kunmun) invite you to celebrate their wedding on 31 January 2027 in Cuttack & reception on 3 February 2027 in Rourkela.",
+      },
+      { property: "og:image", content: "/images/og-image.jpg" },
+      { property: "og:image:width", content: "1200" },
+      { property: "og:image:height", content: "630" },
+      { property: "og:image:alt", content: "Aditya & Akankshya Wedding Invitation" },
+      { property: "og:site_name", content: "InviteStory" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:site", content: "@invitestory.in" },
       { name: "twitter:title", content: "Aditya & Akankshya · Wedding Invitation" },
-      { name: "twitter:description", content: "Together with their families, Aditya (Munu) and Akankshya (Kunmun) invite you to celebrate their wedding." },
+      {
+        name: "twitter:description",
+        content:
+          "Together with their families, Aditya (Munu) and Akankshya (Kunmun) invite you to celebrate their wedding on 31 January 2027 in Cuttack & reception on 3 February 2027 in Rourkela.",
+      },
+      { name: "twitter:image", content: "/images/og-image.jpg" },
 
     ],
     links: [
