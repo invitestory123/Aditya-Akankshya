@@ -34,6 +34,9 @@ function Person({
             {role}
           </span>
           <h3 className="text-primary mt-2 text-3xl font-light">{person.fullName}</h3>
+          <p className="text-gold-soft font-sans text-xs tracking-wider uppercase font-medium mt-1">
+            {person.profession}
+          </p>
           <p className="text-muted-foreground mt-1 text-xs tracking-wide">{person.line}</p>
           <span className="rule-gold my-4 w-20" />
           <p className="text-foreground/75 text-sm leading-relaxed">{person.note}</p>
