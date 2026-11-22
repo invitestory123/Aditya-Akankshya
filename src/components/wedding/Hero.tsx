@@ -52,6 +52,25 @@ export function Hero() {
           style={{ y: textY, opacity: textOpacity }}
           className="flex flex-col items-center"
         >
+          {/* Sacred Golden Ganesha Emblem */}
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.1, duration: 0.8 }}
+            className="mb-2 flex flex-col items-center"
+          >
+            <img
+              src="/images/ganesha.png"
+              alt="Lord Ganesha"
+              width={68}
+              height={95}
+              className="h-16 w-auto object-contain drop-shadow-[0_4px_16px_rgba(212,175,55,0.45)]"
+            />
+            <span className="text-gold-soft font-display mt-0.5 text-[0.6rem] tracking-[0.25em] uppercase">
+              || श्री गणेशाय नमः ||
+            </span>
+          </motion.div>
+
           <motion.p
             initial={{ opacity: 0, y: 14 }}
             animate={{ opacity: 1, y: 0 }}
@@ -99,17 +118,17 @@ export function Hero() {
           </motion.div>
         </motion.div>
 
-        {/* Hero Couple Photo (Aditya & Akankshya in suit & saree) */}
+        {/* Animated / Cartoon Couple Illustration */}
         <motion.img
-          src={wedding.heroCoupleImage}
-          alt="Aditya & Akankshya"
-          width={730}
-          height={824}
+          src="/images/hero-couple-cartoon.png"
+          alt="Aditya & Akankshya Cartoon Illustration"
+          width={1167}
+          height={784}
           initial={{ opacity: 0, y: 40, scale: 0.96 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
           transition={{ delay: 0.7, duration: 1.3, ease: [0.22, 1, 0.36, 1] }}
           style={{ y: coupleY, scale: coupleScale }}
-          className="mt-auto w-[84%] max-w-[340px] brightness-105 contrast-105 drop-shadow-[0_24px_40px_rgba(0,0,0,0.45)]"
+          className="mt-auto w-[90%] max-w-[380px] brightness-105 contrast-105 drop-shadow-[0_24px_40px_rgba(0,0,0,0.45)]"
         />
       </div>
 

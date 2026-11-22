@@ -15,8 +15,9 @@ export const wedding = {
     image: "/images/bride-avatar.jpg",
     fullImage: "/images/bride.jpg",
   },
+  ganeshaImage: "/images/ganesha.png",
   stockHeroImage: "/images/couple-hero.png",
-  heroCoupleImage: "/images/hero-couple-cutout.png",
+  heroCoupleImage: "/images/hero-couple-cartoon.png",
   heroCoupleFramedImage: "/images/hero-couple.jpg",
   combinedCoupleImage: "/images/couple.jpg",
 
