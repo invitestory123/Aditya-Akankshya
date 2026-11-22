@@ -23,7 +23,7 @@ export function Hero() {
   return (
     <section
       ref={ref}
-      className="bg-emerald-deep relative flex h-[100svh] min-h-[640px] w-full flex-col items-center justify-between overflow-hidden pb-8 pt-24"
+      className="bg-emerald-deep relative flex h-[100svh] min-h-[640px] w-full flex-col items-center justify-between overflow-hidden pb-8 pt-32 sm:pt-36"
     >
       <Aurora intensity={1} />
       <div className="from-emerald-ink/50 via-emerald-deep/20 to-emerald-ink/90 absolute inset-0 bg-gradient-to-b" />
@@ -39,12 +39,13 @@ export function Hero() {
 
       <Petals count={12} />
 
+      {/* Garland adjusted higher so flowers never overlap Aditya's name */}
       <motion.img
         src="https://media.invitestory.in/kerala-sands/images/garland.png"
         alt=""
         aria-hidden
         style={{ y: garlandY }}
-        className="pointer-events-none absolute -top-2 left-1/2 w-[135%] max-w-none -translate-x-1/2 opacity-90"
+        className="pointer-events-none absolute -top-12 left-1/2 w-[115%] max-w-none -translate-x-1/2 opacity-85"
       />
 
       <div className="relative z-10 mx-auto flex w-full max-w-md flex-1 flex-col items-center px-6 text-center">
@@ -52,46 +53,37 @@ export function Hero() {
           style={{ y: textY, opacity: textOpacity }}
           className="flex flex-col items-center"
         >
-          {/* Sacred Golden Ganesha Emblem */}
-          <motion.div
+          <motion.p
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1, duration: 0.8 }}
-            className="mb-2 flex flex-col items-center"
+            className="text-gold-soft font-display mb-2 text-xs tracking-[0.35em] uppercase drop-shadow-[0_2px_6px_rgba(0,0,0,0.7)]"
           >
-            <img
-              src="/images/ganesha.png"
-              alt="Lord Ganesha"
-              width={68}
-              height={95}
-              className="h-16 w-auto object-contain drop-shadow-[0_4px_16px_rgba(212,175,55,0.45)]"
-            />
-            <span className="text-gold-soft font-display mt-0.5 text-[0.6rem] tracking-[0.25em] uppercase">
-              || श्री गणेशाय नमः ||
-            </span>
-          </motion.div>
+            || श्री गणेशाय नमः ||
+          </motion.p>
 
           <motion.p
             initial={{ opacity: 0, y: 14 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.9 }}
-            className="text-gold-soft/90 text-[0.6rem] tracking-[0.5em] uppercase"
+            className="text-gold-soft/90 text-[0.65rem] tracking-[0.5em] uppercase drop-shadow-[0_2px_6px_rgba(0,0,0,0.7)]"
           >
             Together with their families
           </motion.p>
 
-          {/* Second page: changed font style to Cinzel with refined, smaller font size */}
           <motion.h1
             initial={{ opacity: 0, y: 24, filter: "blur(8px)" }}
             animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
             transition={{ delay: 0.4, duration: 1.1, ease: [0.22, 1, 0.36, 1] }}
-            className="mt-4 flex flex-col items-center gap-1"
+            className="mt-4 flex flex-col items-center gap-1.5"
           >
-            <span className="text-gold-foil font-cinzel text-2xl sm:text-3xl font-normal tracking-[0.18em] uppercase">
+            <span className="text-gold-foil font-cinzel text-3xl sm:text-4xl font-semibold tracking-[0.2em] uppercase drop-shadow-[0_4px_16px_rgba(0,0,0,0.85)]">
               {wedding.groom.name}
             </span>
-            <span className="font-script text-gold/80 my-0.5 text-2xl font-normal">and</span>
-            <span className="text-gold-foil font-cinzel text-2xl sm:text-3xl font-normal tracking-[0.18em] uppercase">
+            <span className="font-script text-gold/90 my-0.5 text-2xl font-normal drop-shadow-[0_2px_8px_rgba(0,0,0,0.7)]">
+              and
+            </span>
+            <span className="text-gold-foil font-cinzel text-3xl sm:text-4xl font-semibold tracking-[0.2em] uppercase drop-shadow-[0_4px_16px_rgba(0,0,0,0.85)]">
               {wedding.bride.name}
             </span>
           </motion.h1>
@@ -103,33 +95,38 @@ export function Hero() {
             className="rule-gold mt-5 w-32"
           />
 
+          {/* Both Wedding & Reception in Bold White with Perfect Symmetry on a Single Line */}
           <motion.div
             initial={{ opacity: 0, y: 14 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1.15, duration: 0.9 }}
-            className="mt-4 flex flex-col items-center gap-1"
+            className="mt-5 flex w-full flex-col items-center gap-1.5 text-center px-1"
           >
-            <p className="text-ivory font-display text-sm tracking-[0.25em] uppercase">
-              Wedding: 31 Jan 2027 · Cuttack
+            <p className="text-ivory font-display text-xs min-[380px]:text-sm font-semibold tracking-[0.13em] min-[380px]:tracking-[0.18em] sm:tracking-[0.24em] uppercase whitespace-nowrap drop-shadow-[0_2px_8px_rgba(0,0,0,0.7)]">
+              WEDDING: 31 JAN 2027 · CUTTACK
             </p>
-            <p className="text-gold-soft/90 text-[0.7rem] tracking-[0.2em] uppercase font-light">
-              Reception: 3 Feb 2027 · Rourkela
+            <p className="text-ivory font-display text-xs min-[380px]:text-sm font-semibold tracking-[0.13em] min-[380px]:tracking-[0.18em] sm:tracking-[0.24em] uppercase whitespace-nowrap drop-shadow-[0_2px_8px_rgba(0,0,0,0.7)]">
+              RECEPTION: 03 FEB 2027 · ROURKELA
             </p>
           </motion.div>
         </motion.div>
 
-        {/* Animated / Cartoon Couple Illustration */}
-        <motion.img
-          src="/images/hero-couple-cartoon.png"
-          alt="Aditya & Akankshya Cartoon Illustration"
-          width={1167}
-          height={784}
-          initial={{ opacity: 0, y: 40, scale: 0.96 }}
+        {/* Golden Lord Ganesha in place of the couple photo */}
+        <motion.div
+          initial={{ opacity: 0, y: 30, scale: 0.95 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
-          transition={{ delay: 0.7, duration: 1.3, ease: [0.22, 1, 0.36, 1] }}
+          transition={{ delay: 0.7, duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
           style={{ y: coupleY, scale: coupleScale }}
-          className="mt-auto w-[90%] max-w-[380px] brightness-105 contrast-105 drop-shadow-[0_24px_40px_rgba(0,0,0,0.45)]"
-        />
+          className="mt-auto mb-4 flex flex-col items-center"
+        >
+          <img
+            src="/images/ganesha.png"
+            alt="Lord Ganesha"
+            width={680}
+            height={948}
+            className="w-[72%] max-w-[280px] object-contain drop-shadow-[0_20px_45px_rgba(212,175,55,0.5)]"
+          />
+        </motion.div>
       </div>
 
       <motion.div

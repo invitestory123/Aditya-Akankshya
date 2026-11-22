@@ -86,23 +86,22 @@ export function Couple() {
           </Parallax>
         </div>
 
-        {/* Combined Couple Photo */}
+        {/* Animated Couple Illustration on Last Page instead of selfie */}
         <Reveal delay={0.2} className="mt-12">
           <div className="border-gold/30 bg-card/70 shadow-luxe relative overflow-hidden rounded-[2rem] border p-4 backdrop-blur-sm">
-            <div className="relative overflow-hidden rounded-[1.5rem] border border-gold/25">
+            <div className="from-emerald-ink via-primary/80 to-emerald-ink relative flex flex-col items-center overflow-hidden rounded-[1.5rem] border border-gold/25 p-5 pt-8 text-center">
               <img
                 src={wedding.combinedCoupleImage}
                 alt="Aditya & Akankshya Together"
                 loading="lazy"
-                width={746}
-                height={1024}
-                className="h-96 w-full object-cover object-center transition-transform duration-700 hover:scale-105"
+                width={1167}
+                height={784}
+                className="w-full max-w-[320px] object-contain transition-transform duration-700 hover:scale-105 drop-shadow-[0_12px_24px_rgba(0,0,0,0.4)]"
               />
-              <div className="from-black/75 via-black/20 to-transparent absolute inset-0 bg-gradient-to-t flex items-end p-5">
-                <div className="text-center w-full">
-                  <p className="font-script text-gold-foil text-3xl">Aditya &amp; Akankshya</p>
-                  <p className="text-ivory/80 text-[0.65rem] tracking-[0.3em] uppercase mt-1">Together Forever</p>
-                </div>
+              <div className="mt-4 w-full">
+                <span className="rule-gold mx-auto mb-3 block w-20" />
+                <p className="font-script text-gold-foil text-3xl">Aditya &amp; Akankshya</p>
+                <p className="text-ivory/80 text-[0.65rem] tracking-[0.3em] uppercase mt-1">Together Forever</p>
               </div>
             </div>
           </div>

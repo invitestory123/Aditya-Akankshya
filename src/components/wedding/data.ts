@@ -17,9 +17,8 @@ export const wedding = {
   },
   ganeshaImage: "/images/ganesha.png",
   stockHeroImage: "/images/couple-hero.png",
-  heroCoupleImage: "/images/hero-couple-cartoon.png",
-  heroCoupleFramedImage: "/images/hero-couple.jpg",
-  combinedCoupleImage: "/images/couple.jpg",
+  heroCoupleImage: "/images/ganesha.png",
+  combinedCoupleImage: "/images/hero-couple-cartoon.png",
 
   // Wedding: 31 January 2027, 10:00 AM IST (Cuttack)
   dateISO: "2027-01-31T10:00:00+05:30",
